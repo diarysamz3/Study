@@ -5,6 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>정책꾸러미</title>
+  <style>
+    /* common */
+    body,div,h3,p,h4,ul,li{padding: 0; margin: 0;}
+    ul,li{list-style: none;}
+    body{font-size: 12px; font-family: Dotum,"돋움",sans-serif; color: #666;}
+    a:link,a:visited{color: #666; text-decoration: none;}
+    a:hover,a:active,a:focus{text-decoration: underline; color: blue;}
+
+    /* 정책꾸러미 */
+    .cast{position: relative;width: 450px; margin: 20px auto; border: 2px solid #ddd; padding: 10px;}
+    .cast:after{content: "";display: block;clear: both;}
+    .cast>h3{border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;}
+    .cast>p.cast_img{float: left; width: 138px; border: 1px solid red;}
+    .cast>div.cast_txt{float:right; width: 290px; border: 1px solid red}
+    .cast>p.more{position: absolute; right: 0; top: 0;}
+    .cast>li{background: url(images/cast_list.gif) no-repeat 0 50% ;}
+
+    /* float 사용 시 내용이 긴 경우엔 나란히 둘 수 없다. 그럴 때는 가로값을 지정해 줄 것. */
+    /* float 사용 시에는 div에 내용물이 들어가지 않아 쪼그라듬 */
+    
+    /* 자식 요소가 float 된 경우, 부모요소에 높이 지정 방법 */
+    /* 1.heghit  >> 높이값 입력 : 내용이 늘어나면 같이 늘어나지 않음
+       2.overflow:hidden, overflow:outo  >> 부모의 높이 자동으로 잡힘 일부러 사용x
+       3.float   >>  부모도 float이 되어있는 경우 높이 잡힘 일부러 사용x
+       4.공갈div 만들어서 clear:both  >>  내용이 없는 div 만들어 class값 clear로 지정 style에서 div에 clear:both값 지정
+       5.:after{content:"";display:block;clear:both;  >>>일반적으로 사용하는 방법
+          마지막에 내용이 없는 가상의 콘텐츠("")를 만들음->display:block사용하여 블록레벨 요소로 만듬
+           ->clear:both로 float 영향 해제 */
+    
+  </style>
 </head>
 <body>
   <div class="cast">
