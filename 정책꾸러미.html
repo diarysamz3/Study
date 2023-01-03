@@ -14,15 +14,16 @@
     a:hover,a:active,a:focus{text-decoration: underline; color: blue;}
 
     /* 정책꾸러미 */
-    .cast{position: relative;width: 450px; margin: 20px auto; border: 2px solid #ddd; padding: 10px;}
+    .cast{position: relative;width: 450px; margin: 20px auto; border: 2px solid #ddd; padding: 10px;
+          background: url(images/background.gif) repeat-x 0 0;}
     .cast:after{content: "";display: block;clear: both;}
-    .cast>h3{border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;}
+    .cast>h3{/*border-bottom: 2px solid #ddd;*/ padding-bottom: 10px; margin-bottom: 10px;}
     .cast>p.cast_img{float: left; width: 138px; border: 1px solid red;}
     .cast>div.cast_txt{float:right; width: 290px; border: 1px solid red}
-    .cast>p.more{position: absolute; right: 0; top: 0;}
+    .cast>p.more{position: absolute; right: 10px; top: 10px;}
     .cast>li{background: url(images/cast_list.gif) no-repeat 0 50% ;}
 
-    /* float 사용 시 내용이 긴 경우엔 나란히 둘 수 없다. 그럴 때는 가로값을 지정해 줄 것. */
+    /* float 사용 시 내용이 길어 공간이 좁은 경우엔 나란히 둘 수 없다. 그럴 때는 가로값을 지정해 주면 됨. */
     /* float 사용 시에는 div에 내용물이 들어가지 않아 쪼그라듬 */
     
     /* 자식 요소가 float 된 경우, 부모요소에 높이 지정 방법 */
