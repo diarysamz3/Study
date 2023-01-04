@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼예제</title>
+  <style>
+    ul,li{list-style: none; margin-bottom: 60px;}
+    a:link,a:visited{color: #fff; text-decoration: none;}
+    body{font-size: 50px; font-weight: bold; font-family: "맑은고딕",sans-serif;}
+    a.blue:hover{background-color: #2f7e82;}
+    a.red:hover{background-color: #8b3224;}
+    a.yellow:hover{background-color: #c8840c;}
+    a.blue:active{top: 10px;}
+    a.red:active{top: 130px;}
+    a.yellow:active{top: 250px;}
+    ul{position: relative;}
+    .blue{position: absolute;  background-color: #2caebe; padding: 15px; border-radius: 15px;text-shadow: 0 -3px 3px #3f5259; box-shadow: 0 4px 1px #2f7e82; }
+    .red{position: absolute; top: 120px; background-color: #e33200; padding: 15px;border-radius: 15px;text-shadow: 0 -3px 3px #3f5259; box-shadow: 0 4px 1px #8b3224;}
+    .yellow{position: absolute; top: 240px; background-color: #ffb516 ;padding: 15px;border-radius: 15px;text-shadow: 0 -3px 3px #3f5259; box-shadow: 0 4px 1px #c8840c;}
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#" class="blue"> Blue Button &raquo; </a></li>
+    <li><a href="#" class="red"> Red Button &raquo;</a></li>
+    <li><a href="#" class="yellow"> Yellow Button &raquo;</a></li>
+  </ul>
+</body>
+</html>
